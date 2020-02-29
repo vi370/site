@@ -1,15 +1,15 @@
 <h1>Портфолио</h1>
 <p>
 <table>
-    Все проекты в следующей таблице являются вымышленными, поэтому даже не пытайтесь перейти по приведенным ссылкам.
-    <tr><td>Год</td><td>Проект</td><td>Описание</td></tr>
+    Все проекты в следующей таблице являются вымышленными, поэтому даже не пытайтесь перейти по приведенным ссылкам.<br>
+    <tr><td>Id</td><td>Год</td><td>Проект</td><td>Описание</td></tr>
     <?php
 
-    foreach($data as $row)
+    while ($rows = mysqli_fetch_assoc($data))
     {
-        echo '<tr><td>'.$row['Year'].'</td><td>'.$row['Site'].'</td><td>'.$row['Description'].'</td></tr>';
+        echo '<tr><td>'.$rows['Id'].'</td><td>'.$rows['Year'].'</td><td>'.$rows['Site'].'</td><td>'.$rows['Description'].'</td></tr>';
     }
-
     ?>
+
 </table>
 </p>
