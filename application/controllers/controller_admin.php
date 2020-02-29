@@ -1,17 +1,17 @@
 <?php
 
-class Controller_Portfolio extends Controller
+class Controller_Admin extends Controller
 {
 
     function __construct()
     {
-        $this->view = new View();
         $this->model = new Model_Portfolio();
+        $this->view = new View();
     }
 
     function action_index()
     {
         $data = $this->model->get_data();
-        $this->view->generate('portfolio_view.php', 'template_view.php', $data);
+        $this->view->generate('admin_view.php', 'template_view.php', $data);
     }
 }
