@@ -12,7 +12,4 @@ class Model
         ), 'utf8');
     }
 
-    public function get_data()
-    {
-    }
-}
+
