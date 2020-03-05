@@ -9,6 +9,7 @@
 <p><a href="/services">Услуги</a></p>
 <p><a href="/portfolio">Портфолио</a></p>
 <p><a href="/contacts">Контакты</a></p>
+<p><a href="/news">Новости</a></p>
 <?php include 'application/views/'.$content_view; ?>
 </body>
 </html>
